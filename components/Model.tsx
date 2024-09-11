@@ -4,26 +4,15 @@ import { useToast } from "../hooks/useModel";
 import { Dialog } from "@mui/material";
 
 export const Toast: React.FC<ToastProps> = (props) => {
-  const { isRunning, preventExitTransition, toastRef } = useToast(props);
-  const {
-    closeButton, // csan be fn , component , boolean ==> props : ({closeToast, type, theme})
-    children,
-    autoClose,
-    type, // error
+  const { toastRef } = useToast(props);
+  const { 
+    children, 
     closeToast,
     transition: Transition,
-    position,
-    className,
-    style,
-    updateId,
-    role,
-    rtl,
-    toastId,
-    deleteToast,
-    isIn,
-    // iconOut,
-    closeOnClick, // can omit
-    theme,
+    position,  
+    role, 
+    toastId, 
+    isIn, 
     disableClose = false,
     DialogProps,
   } = props; 

@@ -1,6 +1,6 @@
 import React, { cloneElement, isValidElement } from "react";
 
-import { type Theme, type ToastProps, type TypeOptions } from "../types";
+import { type Theme, type TypeOptions } from "../types";
 import { Default, isFn, isNum, isStr } from "../utils";
 import { CircularProgress } from "@mui/material";
 
